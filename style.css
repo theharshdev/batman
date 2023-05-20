@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unica One', cursive;
+}
+body{
+    background-color: black;
+    height: 5000px;
+}
+.box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.box video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    filter: saturate(0);
+}
+
+.h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.h1 h1 {
+    font-size: 150px;
+    font-weight: 900;
+}
+
+.h1 a {
+    text-decoration: none;
+    font-size: 70px;
+    border-bottom: 1px solid white;
+}
+
+.menu {
+    list-style: none;
+    z-index: 2;
+}
+
+.menu li {
+    color: red;
+    display: inline-block;
+    padding: 5px 20px;
+    letter-spacing: 7px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.menu li:hover{
+    transform:scaleY(1.6);
+    letter-spacing: 3px;
+}
+.batman {
+    color: red;
+}
+.logo{
+    width: 150px;
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 10px;
+    z-index: 20;
+    cursor: pointer;
+}
+.hero-img{
+    margin-top: -400px;
+    filter: saturate(0);
+    z-index:1;
+}
+.hero-text{
+    word-spacing: 4px;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  .secondar-img{
+    margin-left: -50px;
+    filter: saturate(0);
+  }
+  .secondary-text{
+    margin-left: -400px;
+    opacity: 0.4;
+  }
+  .hero-btn{
+    color:black;
+    background-color: rgb(206, 206, 206);
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .hero-btn:hover{
+    background-color:rgb(255, 255, 255);
+    color:red;
+  }
+
+  .bg-fixed{
+    background-image: url('images/bg-fixed.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .fixed-overlay-img{
+    margin-top: -200px;
+    border: 2px solid white;
+  }
+.btn-overlay{
+    color: red;
+    font-size: 100px;
+    font-weight: 900;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: 0.6s;
+    display: inline-block;
+    position: relative;
+    bottom: -180px;
+    letter-spacing: 12px;
+}
+.btn-overlay:hover{
+    color: white;
+}
+.bat-img-carousel img{
+    transition: 0.5s;
+}
+.owl-div{
+    position: relative;
+}
+.owl-div p{
+    position: absolute;
+    bottom:-300px;
+    left: 10px;
+    color: white;
+    font-weight:400;
+    transition: 0.4s;
+    font-size: 18px
+}
+.owl-div:hover p{
+    bottom: 0px;
+}
+.owl-div:hover img{
+    transform: translateY(200px);
+    filter: saturate(0);
+}
+.question{
+    position: relative;
+}
+.question-img{
+    position: absolute;
+    top: -100px;
+    left: -130px;
+    transform: rotate(33deg);
+    width: 432px;
+    z-index: 22;
+    filter: brightness(10000);
+}
